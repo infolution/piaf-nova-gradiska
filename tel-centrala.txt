@@ -1,0 +1,65 @@
+Telefonska centrala u novoj gradiški
+
+Željeno stanje:
+15 telefona
+broj izlaza nepoznat
+
+Možemo ići na IP telefone
+IP telefonske centrale
+OpenVOX IX130
+3CX je softverska centrala
+
+Kako zaobići centralu
+http://www.marksanborn.net/howto/bypass-firewall-and-nat-with-reverse-ssh-tunnel/
+
+Konfiguracija
+Procesor IvyBridge 670 kn
+Ploča 500 kn
+Memorija DDR3 2GB kn 120 knn
+Hard disk 320 GB 280 kn
+ukupno 1570
+
+Telefon
+ATCOM 810p 51 EUR http://shop.voipdistri.com/VoIP-Telefone/SIP-Telefone/ATCOM/
+ukupno 51 - 5814 kn
+
+ili
+
+Grandstream GXP1405  393,00 kn
+
+POE Switch
+NET SWC AT-FS750/24POE-50 Alied Telesis 1634,00 kn
+
+Kartice za telfoniju
+3000 kn
+
+
+
+Ukupno (predviđeno 17358,00    15742(centrala) 1616(telefoni))
+6204 kn centrala
+5814 kn telefoni
+12018 ukupno (zarada 30%)
+
+Softver - moram izabrat
+Incredible PBX - taj dosta hvale - to je pbx in a flash on steroids
+http://pbxinaflash.net/
+elastix
+trixbox - kao da je završen razvoj
+
+##Instalacija
+
+Instalirao sam dahdi driver
+Uglavnom sve sam dobio instalirano osim drivera za hfcs kojeg sam skinuo i napravio build
+http://dahdi-hfcs.sourceforge.net/
+I onda moram umjesto zaphfc staviti dahdi_hfcs
+
+Provjeravam da li je učitan hardver sa dahdi_hardware
+Šifra za web aplikaciju od centrale je we6v9dG3
+Šifra root je fdnb4dl
+Problem je jer channel nije dostupan kod poziva
+To rješavam tako da stavim bri_cpe (što označava point to point) bri_cpe_ptmp (point to multipoint)
+
+Ovdje je isti problem - prelazak sa dahdi na misdn
+http://lists.digium.com/pipermail/asterisk-users/2010-December/257103.html
+
+
