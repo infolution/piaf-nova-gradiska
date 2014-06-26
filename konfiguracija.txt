@@ -11,3 +11,6 @@ Shema telefona:
 
 Web za provisioning telefona
 http://www.provisioner.net/ 
+
+eth0 (integrirana kartica) - internet
+eth1 (pci-e kartica) - switch sa telefonima

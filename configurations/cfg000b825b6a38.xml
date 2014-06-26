@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<gs_provision version="1">
+<mac>000b825b6a38</mac>
+<config version="1">
+<P271>1</P271>
+<P270>205</P270>
+<P47>http://192.168.5.102/</P47>
+<P35>205</P35>
+<P36>205</P36>
+<P34>205</P34>
+<P3>205</P3>
+<P103>205</P103>
+</config>
+</gs_provision>
+
