@@ -1,0 +1,3 @@
+#!/bin/sh
+
+cp dhcp_sample.conf /etc/dhcp/dhcpd.conf

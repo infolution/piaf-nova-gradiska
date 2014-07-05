@@ -1,7 +1,8 @@
 
 BEGIN { FS=","; OFS="";
 print "Starting creating configurations";
-sip_server = "http://192.168.5.102/";
+sip_server = "192.168.15.1";
+password = "il37819236198263";
 account_name = "FreePBX server";
 path = "configurations/";
 }
@@ -21,8 +22,8 @@ NR > 1 {
 	output[6] = "<P47>"sip_server"</P47>";  # SIP Server
 	output[7] = "<P35>"$1"</P35>";  # SIP User ID
 	output[8] = "<P36>"$1"</P36>";  # Authenticate ID
-	output[9] = "<P34>"$1"</P34>";  # Authenticate Password
-	output[10] = "<P3>"$1"</P3>";  # Authenticate Password
+	output[9] = "<P34>"password"</P34>";  # Authenticate Password
+	output[10] = "<P3>"$1"</P3>";  #Display name 
 
 	output[11] = "<P103>"$1"</P103>";  # DNS Mode. 0 - A Record, 1 - SRV, 2 - NAPTR/SRV, 3 - Use Configured IP. Default is 0
 	output[12] = "</config>";

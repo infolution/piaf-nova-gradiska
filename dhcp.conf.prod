@@ -2,6 +2,7 @@ ddns-update-style none;
 default-lease-time 172400;
 max-lease-time 604800;
 authoritative;
+option tftp66 code 66 = string;
 
 subnet 192.168.15.0 netmask 255.255.255.0 {
 
@@ -13,11 +14,7 @@ subnet 192.168.15.0 netmask 255.255.255.0 {
   option domain-name-servers 192.168.15.1;
   option time-offset              3600; #Central Europe standard time
   option ntp-servers              192.168.15.1;
-  option voip-tftp-server code 66 = ip-address; # DON'T change this
-  option tftp-server-name         "192.168.15.1";
-  option voip-tftp-server code 43 = ip-address; # DON'T change this
-  option tftp-server-name         "192.168.15.1";
-  
+  option tftp66         "192.168.15.1";
   range 192.168.15.100 192.168.15.200;
   default-lease-time 302400;
   max-lease-time 604800;
