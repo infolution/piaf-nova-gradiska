@@ -14,3 +14,7 @@ http://www.provisioner.net/
 
 eth0 (integrirana kartica) - internet
 eth1 (pci-e kartica) - switch sa telefonima
+
+Postavio sam dynamicdns providera na https://duckdns.org
+
+Moram port forwardad portove na routeru kako bi mogao pristupiti serveru
